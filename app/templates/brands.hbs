@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-sm-6">
+      <div class="list-group">
+        <li class="list-group-item active">
+          Brands {{#link-to 'brands.new' class="btn btn-default btn-xs pull-right"}} New Brand{{/link-to}}
+        </li>
+        {{#each}}
+          <li class="list-group-item">
+            {{#link-to 'brand' this}}
+              {{name}}
+            {{/link-to}}
+          </li>
+        {{else}}
+          <a class="list-group-item">No brands found.</a>
+        {{/each}}
+      </div>
+    </div>
+
+    {{outlet}}
+        
+  </div>
+</div>
+

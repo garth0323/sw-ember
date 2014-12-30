@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-sm-6">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          Brands
+        </a>
+        {{#each brand}}
+          <a class="list-group-item">
+            {{#link-to 'brand' this}}
+              {{name}}
+            {{/link-to}}
+          </a>
+        {{else}}
+          <a class="list-group-item">No brands found.</li>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
+

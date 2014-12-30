@@ -1,3 +1,16 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SocialWhirled</a>
+    </div>
+    <ul class="nav navbar-nav pull-right">
+        {{!-- <li>{{#link-to 'newstory'}}<span class="glyphicon glyphicon-plus"></span> Submit Story{{/link-to}}</li> --}}
+      <li>{{link-to 'Home' 'index'}}</li>
+      <li>{{link-to 'Brands' 'brands'}}</li>
+    </ul>
+</nav>
+
+
+
+<hr>
 
 {{outlet}}

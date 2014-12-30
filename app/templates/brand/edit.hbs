@@ -1,0 +1,49 @@
+<div class="col-sm-6">
+  <form {{action "saveChanges" on="submit" method="put"}}>
+    <h2>Edit {{name}}</h2>
+    <div class="form-group">
+      <label for='name'>Name</label>
+        {{input value=name id='name' class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for='website'>Website</label>
+        {{input value=website_url id='website' class="form-control"}}
+    </div>   
+    <div class="form-group">
+      <label for='ppl'>Privacy Policy Link</label>
+        {{input value=privacy_policy_link id='ppl' class="form-control"}}
+    </div>   
+    <div class="form-group">  
+      <label for='terms'>Terms Link</label>
+        {{input value=terms_link id='terms' class="form-control"}}
+    </div>   
+    <div class="form-group">  
+      <label for='instagram_account'>Instagram Account</label>
+        {{input value=instagram_account id='instagram_account' class="form-control"}}
+    </div>   
+    <div class="form-group">
+      <label for='instagram_url'>Instagram URL</label>
+        {{input value=instagram_url id='instagram_url' class="form-control"}}
+    </div>   
+    <div class="form-group">  
+      <label for='twitter_account'>Twitter Account</label>
+        {{input value=twitter_account id='twitter_account' class="form-control"}}
+    </div>   
+    <div class="form-group">  
+      <label for='twitter_url'>Twitter URL</label>
+        {{input value=twitter_url id='twitter_url' class="form-control"}}
+    </div>   
+    <div class="form-group">  
+      <label for='youtube_account'>YouTube Account</label>
+        {{input value=youtube_account id='youtube_account' class="form-control"}}
+    </div>   
+    <div class="form-group">  
+      <label for='youtube_url'>YouTube URL</label>
+        {{input value=youtube_url id='youtube_url' class="form-control"}}
+    </div>   
+    <div class="form-group">  
+      <button class="btn btn-primary btn-block" type="submit" click="saveChanges">Save</button>
+      <button class="btn btn-primary btn-block" type="cancel" click="cancel">Cancel</button>
+    </div>   
+  </form>
+</div>

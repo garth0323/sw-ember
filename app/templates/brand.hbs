@@ -1,0 +1,72 @@
+{{outlet}}
+
+{{#unless isEditing}}
+  <div class="col-sm-6">
+    {{!-- <img {{bind-attr src=favicon_url}} style="width:30px;height:30px"> --}} <h2>{{name}}</h2>
+    {{#link-to 'brand.edit' class="btn btn-default pull-right"}}Edit{{/link-to}}
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Website:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{website_url}}</p>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Privacy Policy Link:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{privacy_policy_link}}</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Terms Link:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{terms_link}}</p>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Instagram Account:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{instagram_account}}</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Instagram URL:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{instagram_url}}</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Twitter Account:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{twitter_account}}</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Twitter URL:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{twitter_url}}</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">YouTube Account:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{youtube_account}}</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">YouTube URL:</label>
+        <div class="col-sm-8">
+          <p class="form-control-static">{{youtube_url}}</p>
+        </div>
+      </div>
+    </form>
+  </div>
+{{/unless}}
